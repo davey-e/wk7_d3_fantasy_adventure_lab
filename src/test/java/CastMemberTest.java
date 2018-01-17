@@ -26,7 +26,11 @@ public class CastMemberTest {
     public void canSetHealthPoints(){
         castMember.setHealthPoints(10);
         assertEquals(10, castMember.getHealthPoints());
+    }
 
+    @Test
+    public void canSpeakName(){
+        assertEquals("I am Joe", castMember.speakName());
     }
 
 }

@@ -20,4 +20,8 @@ public class CastMember {
     public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
     }
+
+    public String speakName() {
+        return "I am " + this.name;
+    }
 }
