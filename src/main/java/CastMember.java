@@ -27,5 +27,8 @@ public class CastMember {
 
     public void takeDamage(int damage) {
         this.healthPoints = this.healthPoints - damage;
+        if(this.healthPoints < 0){
+            this.healthPoints = 0;
+        }
     }
 }

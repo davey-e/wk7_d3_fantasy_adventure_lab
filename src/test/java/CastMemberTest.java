@@ -40,5 +40,11 @@ public class CastMemberTest {
 
     }
 
+    @Test
+    public void healthPointsWontGoBelowZero(){
+        creature.takeDamage(30);
+        assertEquals(0, creature.getHealthPoints());
+    }
+
 
 }
