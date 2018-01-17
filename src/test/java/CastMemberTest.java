@@ -9,12 +9,17 @@ public class CastMemberTest {
 
     @Before
     public void before(){
-        castMember = new CastMember("Joe");
+        castMember = new CastMember("Joe", 20);
     }
 
     @Test
     public void hasName(){
         assertEquals("Joe", castMember.getName());
+    }
+
+    @Test
+    public void hasHealthPoints(){
+        assertEquals(20, castMember.getHealthPoints());
     }
 
 }
