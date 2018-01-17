@@ -22,4 +22,11 @@ public class CastMemberTest {
         assertEquals(20, castMember.getHealthPoints());
     }
 
+    @Test
+    public void canSetHealthPoints(){
+        castMember.setHealthPoints(10);
+        assertEquals(10, castMember.getHealthPoints());
+
+    }
+
 }
