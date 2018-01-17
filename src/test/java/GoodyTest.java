@@ -13,4 +13,10 @@ public class GoodyTest {
         goody = new Goody("Bob", 50);
     }
 
+    @Test
+    public void canAcceptTreasure(){
+        goody.acceptTreasure(treasureType);
+        assertEquals(100, goody.getLootBag().get(0).getValue());
+    }
+
 }
