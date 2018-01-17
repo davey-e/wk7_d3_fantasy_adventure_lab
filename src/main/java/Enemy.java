@@ -8,7 +8,7 @@ public class Enemy extends CastMember implements IAttack {
     }
 
     public void attack(CastMember victim) {
-        victim.takeDamage(this.attackPoints);
+        victim.adjustHealthPoints(this.attackPoints);
     }
 
     public int getAttackPoints() {

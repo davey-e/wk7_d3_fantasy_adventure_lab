@@ -13,8 +13,4 @@ public class GoodyTest {
         goody = new Goody("Bob", 50);
     }
 
-//    @Test
-//    public void hasImplement(){
-//        assertEquals(weapon, goody.getImplement());
-//    }
 }

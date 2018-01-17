@@ -35,14 +35,14 @@ public class CastMemberTest {
 
     @Test
     public void canTakeDamage(){
-        creature.takeDamage(10);
+        creature.adjustHealthPoints(10);
         assertEquals(10, creature.getHealthPoints());
 
     }
 
     @Test
     public void healthPointsWontGoBelowZero(){
-        creature.takeDamage(30);
+        creature.adjustHealthPoints(30);
         assertEquals(0, creature.getHealthPoints());
     }
 
