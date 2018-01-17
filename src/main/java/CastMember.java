@@ -1,7 +1,7 @@
 public class CastMember {
     
-    String name;
-    int healthPoints;
+    private String name;
+    private int healthPoints;
     
     public CastMember(String name, int healthPoints){
         this.name = name;
