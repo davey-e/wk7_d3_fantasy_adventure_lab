@@ -5,38 +5,38 @@ import static org.junit.Assert.assertEquals;
 
 public class CastMemberTest {
 
-    CastMember castMember;
+    Creature creature;
 
     @Before
     public void before(){
-        castMember = new CastMember("Joe", 20);
+        creature = new Creature("Joe", 20);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Joe", castMember.getName());
+        assertEquals("Joe", creature.getName());
     }
 
     @Test
     public void hasHealthPoints(){
-        assertEquals(20, castMember.getHealthPoints());
+        assertEquals(20, creature.getHealthPoints());
     }
 
     @Test
     public void canSetHealthPoints(){
-        castMember.setHealthPoints(10);
-        assertEquals(10, castMember.getHealthPoints());
+        creature.setHealthPoints(10);
+        assertEquals(10, creature.getHealthPoints());
     }
 
     @Test
     public void canSpeakName(){
-        assertEquals("I am Joe", castMember.speakName());
+        assertEquals("I am Joe", creature.speakName());
     }
 
     @Test
     public void canTakeDamage(){
-        castMember.takeDamage(10);
-        assertEquals(10, castMember.getHealthPoints());
+        creature.takeDamage(10);
+        assertEquals(10, creature.getHealthPoints());
 
     }
 
