@@ -24,4 +24,8 @@ public class CastMember {
     public String speakName() {
         return "I am " + this.name;
     }
+
+    public void takeDamage(int damage) {
+        this.healthPoints = this.healthPoints - damage;
+    }
 }

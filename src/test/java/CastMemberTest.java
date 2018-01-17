@@ -33,4 +33,12 @@ public class CastMemberTest {
         assertEquals("I am Joe", castMember.speakName());
     }
 
+    @Test
+    public void canTakeDamage(){
+        castMember.takeDamage(10);
+        assertEquals(10, castMember.getHealthPoints());
+
+    }
+
+
 }
